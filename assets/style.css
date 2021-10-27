@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+h1 {
+    display: inline-block;
+}
+
+nav {
+    position: absolute;
+}
+
+nav a {
+    color: white!important;
+}
+
+.flex {
+    max-width: 1000px;
+}
+
+.main_top_section .hero_title {
+    position: relative;
+    display: block;
+    margin: auto;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    width: 100%;
+}
+
+.main_top_section .hero_title h1 {
+    width: 100%;
+    font-family: 'Roboto';
+    color: white;
+    font-size: 10vmin;
+    text-align: center;
+}
+
+.new_album_title {
+    font-size: 3vmin;
+    text-align: center;
+    color: white;
+    padding: 1vmin;
+    background: #1212122e;
+    backdrop-filter: blur(5px);
+}
+
+.main_top_section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /*background-size: cover;
+    background-position: left top;
+    background-image: url(http://www.thesidh.it/wp-content/uploads/2021/10/BACKGROUND-1-1.jpg?id=166);*/
+    /*https://d2j6dbq0eux0bg.cloudfront.net/startersite/images/14400077/1630586700328.jpg*/
+}
+
+.background_hero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.album_section {
+    padding: 3%;
+    background: var(--background-color);
+}
+
+.album_section h2 {
+    margin-top: 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.backdrop {
+    height: 100%;
+    background: #00000000;
+    display: grid;
+    grid-template-columns: auto 51vmin auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.down_arrow_icon {
+    width: 4vmin;
+    filter: invert(1);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.album_card {
+    /*height: calc(30vmax);*/
+    width: 25vmax;
+    max-width: 300px;
+    background: white;
+}
+
+.album_card img {
+    width: 100%;
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+}
+
+.album_card h3 {
+    text-align: center;
+}
+
+#main_logo {
+    width: 100%;
+    transform: scale(1.2);
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    position: relative;
+    grid-row: 1;
+    display: block;
+}
+
+@keyframes logo_paths {
+    to {
+        stroke-dashoffset: 0%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .backdrop {
+        grid-template-columns: 100%;
+    }
+
+    .hero_title {
+        grid-column-start: 1!important;
+        grid-column-end: 1!important;
+    }
+
+    .new_album_title {
+        font-size: 5vmin;
+    }
+}
+
+@media screen and (max-width: 948px) and (max-height: 1536px) and (max-aspect-ratio: 948/1536) {
+    .background_hero {
+        object-position: calc(50% - -58vmax) top;
+    }
+}

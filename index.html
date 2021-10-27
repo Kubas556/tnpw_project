@@ -8,150 +8,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>title</title>
-    <meta name="description" content="">
+    <title>The SIDH</title>
+    <meta name="description" content="School web project about the SIDH artists">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="preload"
         href="https://don16obqbay2c.cloudfront.net/fonts/proximanova/proximanova-regularit-webfont.woff2" as="font"
         type="font/woff2" crossorigin="anonymous">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            z-index: 1;
-            right: 0;
-        }
-
-        nav ul {
-            display: inline-flex;
-            list-style: none;
-        }
-
-        h1 {
-            display: inline-block;
-        }
-
-        .main_top_section h1 {
-            position: relative;
-            display: block;
-            font-family: 'Roboto';
-            color: white;
-            font-size: 10vmin;
-            text-align: center;
-            margin: auto;
-            grid-column-start: 2;
-            grid-column-end: 2;
-            width: 100%;
-        }
-
-        .main_top_section {
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-            /*background-size: cover;
-            background-position: left top;
-            background-image: url(http://www.thesidh.it/wp-content/uploads/2021/10/BACKGROUND-1-1.jpg?id=166);*/
-            /*https://d2j6dbq0eux0bg.cloudfront.net/startersite/images/14400077/1630586700328.jpg*/
-        }
-
-        .background_hero {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            object-fit: cover;
-            object-position: left top;
-        }
-
-        .flex {
-            display: flex;
-            flex-flow: wrap;
-            position: relative;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            gap: 50px;
-        }
-
-        .album_section {
-            padding: 3%;
-        }
-
-        .album_section h2 {
-            margin-top: 0;
-            font-size: 3rem;
-            text-align: center;
-        }
-
-        .backdrop {
-            height: 100%;
-            background: #00000000;
-            display: grid;
-            grid-template-columns: auto 51vmin auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .down_arrow_icon {
-            width: 4vmin;
-            filter: invert(1);
-            position: absolute;
-            bottom: 0px;
-            left: 50%;
-            cursor: pointer;
-            transform: translate(-50%, -50%) rotate(180deg);
-        }
-
-        .album_card {
-            height: calc(30vmax);
-            width: 25vmax;
-            background: white;
-            -webkit-box-shadow: 5px 5px 18px 5px rgb(0 0 0 / 11%);
-            box-shadow: 5px 5px 18px 5px rgb(0 0 0 / 11%);
-        }
-
-        .album_card img {
-            width: 100%;
-        }
-
-        #main_logo {
-            width: 100%;
-            transform: scale(1.2);
-            margin: auto;
-            grid-column-start: 1;
-            grid-column-end: 1;
-            position: relative;
-            grid-row: 1;
-            display: block;
-        }
-
-        #main_logo path {
-            animation: logo_paths 2s;
-            animation-timing-function: ease-out;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes logo_paths {
-            to {
-                stroke-dashoffset: 0%;
-            }
-        }
-
-        @media screen and (max-width: 948px) and (max-height: 1536px) and (max-aspect-ratio: 948/1536) {
-            .background_hero {
-                object-position: calc(50% - -58vmax) top;
-            }
-        }
-    </style>
     <script>
         function scrolltop(e) {
             let albumsSection = document.getElementById('albums');
@@ -168,25 +32,15 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav>
-        <ul>
-            <li>
-                <a>Home</a>
-            </li>
-            <li>
-                <a>About</a>
-            </li>
-            <li>
-                <a>Tour</a>
-            </li>
-        </ul>
-    </nav>
     <main>
         <section class="main_top_section">
-            <img class="background_hero"
-                src="http://www.thesidh.it/wp-content/uploads/2021/10/BACKGROUND-1-1.jpg?id=166">
+            <img class="background_hero" src="./assets/hero_image.jpg">
             <div class="backdrop">
-                <h1>The SIDH</h1>
+                <div class="hero_title">
+                    <h1>The SIDH</h1>
+                    <p class="new_album_title"><span style="color: var(--color-primary)">Nigredo</span> - New Album Out
+                    </p>
+                </div>
                 <svg id="main_logo" viewBox="0 0 2500 2500" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
                     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
@@ -200,17 +54,38 @@
                 <img onclick="scrolltop()" class="down_arrow_icon" src="assets/up-arrow-svgrepo-com.svg">
             </div>
         </section>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                <li>
+                    <a>Tour</a>
+                </li>
+                <li>
+                    <a>Contact</a>
+                </li>
+            </ul>
+        </nav>
+
         <section id="albums" class="album_section">
             <h2>Albums</h2>
             <div class="flex">
                 <div class="album_card">
                     <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/14400077/858604115.jpg">
+                    <h3>Nitro</h3>
                 </div>
                 <div class="album_card">
                     <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/14400077/2520036737.jpg">
+                    <h3>Nigredo</h3>
                 </div>
                 <div class="album_card">
                     <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/14400077/858604102.jpg">
+                    <h3>Another Way To Fly</h3>
                 </div>
             </div>
         </section>
@@ -218,7 +93,7 @@
             <p>&copy;
                 <script>
                     document.write((new Date).getFullYear());
-                </script> Jakub Sedlák
+                </script> Jakub Sedlák - this site is part of school project, all images belongs to TheSIDH
             </p>
         </footer>
     </main>
