@@ -1,3 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: visible;
+}
+
 nav {
     margin-left: auto;
 }
@@ -6,6 +13,7 @@ nav {
     padding: 3%;
     background: var(--background-color);
     font-size: calc(1em + 1vmin);
+    box-shadow: var(--box-shadow);
 }
 
 .flex {
@@ -28,6 +36,21 @@ nav {
     box-shadow: var(--box-shadow);
     margin: auto;
     display: block;
+}
+
+.img_section {
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.img_wrapper {
+    width: 25vmax;
+    max-width: 545px
+}
+
+.img_wrapper img {
+    width:100%;
+    box-shadow: var(--box-shadow);
 }
 
 @media  only screen and (max-width:788px) {
