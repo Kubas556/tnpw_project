@@ -4,15 +4,18 @@
 :root {
     --color-primary: #EB954B;
     --color-primary-contrast:#81440E;
-    --text-color: white;
-    --background-color-contrast: #121212;
+    --text-color: black;
+    --text-color-contrast: white;
     --background-color: white;
+    --paper-color: white;
     --box-shadow: 2px 2px 18px 5px rgb(0 0 0 / 11%);
     --section-padding: 3%;
 }
 
 body {
     margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
 }
 

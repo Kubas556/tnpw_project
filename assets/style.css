@@ -10,7 +10,7 @@ nav {
 }
 
 nav a {
-    color: white!important;
+    color: var(--text-color-contrast)!important;
 }
 
 .flex {
@@ -29,7 +29,7 @@ nav a {
 .main_top_section .hero_title h1 {
     width: 100%;
     font-family: 'Roboto';
-    color: white;
+    color: var(--text-color-contrast);
     font-size: 10vmin;
     text-align: center;
 }
@@ -37,7 +37,7 @@ nav a {
 .new_album_title {
     font-size: 3vmin;
     text-align: center;
-    color: white;
+    color: var(--text-color-contrast);
     padding: 1vmin;
     background: #1212122e;
     backdrop-filter: blur(5px);
@@ -63,7 +63,6 @@ nav a {
 
 .album_section {
     padding: 3%;
-    background: var(--background-color);
 }
 
 .album_section h2 {
@@ -74,7 +73,6 @@ nav a {
 
 .backdrop {
     height: 100%;
-    background: #00000000;
     display: grid;
     grid-template-columns: auto 51vmin auto;
     position: relative;
@@ -95,7 +93,7 @@ nav a {
     /*height: calc(30vmax);*/
     width: 25vmax;
     max-width: 300px;
-    background: white;
+    background: var(--paper-color);
 }
 
 .album_card img {

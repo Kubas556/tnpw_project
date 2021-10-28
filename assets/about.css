@@ -11,7 +11,7 @@ nav {
 
 .about_section {
     padding: 3%;
-    background: var(--background-color);
+    background: var(--paper-color);
     font-size: calc(1em + 1vmin);
     box-shadow: var(--box-shadow);
 }
