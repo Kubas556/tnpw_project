@@ -51,6 +51,7 @@ nav {
 .img_wrapper img {
     width:100%;
     box-shadow: var(--box-shadow);
+    pointer-events: none;
 }
 
 @media  only screen and (max-width:788px) {

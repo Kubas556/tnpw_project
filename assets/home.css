@@ -100,6 +100,7 @@ nav a {
     width: 100%;
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
+    pointer-events: none;
 }
 
 .album_card h3 {
