@@ -37,7 +37,7 @@ form {
 
 form .form_group label {
     width: 20rem;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .form_group input, .form_group textarea {
@@ -45,14 +45,14 @@ form .form_group label {
     width: 40vmin;
     font-family: 'Roboto';
     padding: 10px;
-    font-size: 3rem;
+    font-size: 1.5rem;
     border: 2px solid var(--color-primary);
 }
 
 .form_group input[type="submit"] {
     border: none;
     width: auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: var(--color-primary);
     color: var(--text-color-contrast);
     box-shadow: var(--box-shadow);
