@@ -8,7 +8,7 @@
     --text-color-contrast: white;
     --background-color: white;
     --paper-color: white;
-    --box-shadow: 2px 2px 18px 5px rgb(0 0 0 / 11%);
+    --box-shadow: 2px 2px 18px 5px rgb(0 0 0 / 22%);
     --section-padding: 3%;
 }
 
@@ -26,7 +26,7 @@ main {
 
 nav {
     position: relative;
-    width: 308px;
+    width: 328px;
     top: 0;
     z-index: 1;
     right: 0;

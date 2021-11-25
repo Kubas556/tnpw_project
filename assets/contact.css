@@ -10,6 +10,10 @@ main {
     flex-direction: column;
 }
 
+h1 {
+    padding-left: 1rem;
+}
+
 nav {
     margin-left: auto;
 }
