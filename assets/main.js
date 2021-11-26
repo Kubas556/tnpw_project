@@ -17,6 +17,10 @@ window.addEventListener('load', () => {
         heroImageX = getComputedStyle(background).objectPosition.split(' ')[0];
         heroImageX = heroImageX === '0%' ? heroImageX : getComputedStyle(background).objectPosition.split(')')[0] + ')';
     };
+
+    document.querySelectorAll('div[href]').forEach(e => {
+        e.addEventListener('click', () => window.location = e.getAttribute('href'));
+    });
 });
 
 // ----- page scrolling -----
