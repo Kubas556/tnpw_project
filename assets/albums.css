@@ -11,16 +11,18 @@ main {
 
 h1 {
     padding-left: 1rem;
-    width: 100%;
+
     text-align: center;
 }
 
 section {
     flex: 1;
+    padding: var(--section-padding);
 }
 
 .card {
     max-width:500px;
+    -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
     /*max-height:500px;*/
     position : relative;
@@ -59,4 +61,8 @@ section {
 
 .albums_container {
     gap: 2rem;
+}
+
+.flex {
+    justify-content:center;
 }

@@ -96,6 +96,12 @@ nav a {
     background: var(--paper-color);
 }
 
+@media (prefers-color-scheme: dark) {
+    .album_card {
+        background: none;
+    }
+}
+
 .album_card img {
     width: 100%;
     -webkit-box-shadow: var(--box-shadow);

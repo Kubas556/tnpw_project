@@ -27,11 +27,14 @@ form {
     flex-direction: column;
     gap: 10px;
     padding: 1rem;
+    -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
+    background: var(--paper-color);
 }
 
 .form_section {
     flex: 1;
+    padding: var(--section-padding);
 }
 
 .form_group {
@@ -44,6 +47,7 @@ form {
 form .form_group label {
     width: 20rem;
     font-size: 2rem;
+    text-align: center;
 }
 
 .form_group input, .form_group textarea {

@@ -10,9 +10,10 @@ nav {
 }
 
 .about_section {
-    padding: 3%;
+    padding: var(--section-padding);
     background: var(--paper-color);
     font-size: calc(1em + 1vmin);
+    -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
 }
 
@@ -23,6 +24,10 @@ nav {
 .about_text {
     flex: 1;
     min-width: 625px;
+}
+
+.about_text a {
+    color: var(--color-primary-contrast);
 }
 
 .about_video {
@@ -39,7 +44,7 @@ nav {
 }
 
 .img_section {
-    padding: 3%;
+    padding: var(--section-padding);
     box-sizing: border-box;
 }
 

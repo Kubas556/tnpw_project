@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-:root {
-    --color-primary: #EB954B;
-    --color-primary-contrast:#81440E;
-    --text-color: black;
-    --text-color-contrast: white;
-    --background-color: white;
-    --paper-color: white;
-    --box-shadow: 2px 2px 18px 5px rgb(0 0 0 / 22%);
-    --section-padding: 3%;
-}
+/*@media (prefers-color-scheme: light) {*/
+    :root {
+        --color-primary: #EB954B;
+        --color-primary-contrast:#81440E;
+        --text-color: black;
+        --text-color-contrast: white;
+        --background-color: white;
+        --paper-color: white;
+        --box-shadow: 2px 2px 18px 5px rgb(0 0 0 / 22%);
+        --section-padding: 3%;
+    }
+/*}*/
+
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #EB954B;
+        --color-primary-contrast:#EB954B;
+        --text-color: white;
+        --text-color-contrast: white;
+        --background-color: black;
+        --paper-color: #121212;
+        --box-shadow: 2px 2px 18px 5px rgb(18 18 18 / 100%);
+        --section-padding: 3%;
+    }
+}*/
+
 
 body {
     margin: 0;
