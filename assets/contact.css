@@ -12,6 +12,8 @@ main {
 
 h1 {
     padding-left: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 nav {
