@@ -17,11 +17,16 @@ nav {
     box-shadow: var(--box-shadow);
 }
 
-.flex {
-    flex-direction: row;
+.about_section .flex {
+    flex-direction: column;
 }
 
-.about_text {
+.text_section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_text, .text_section {
     flex: 1;
     min-width: 625px;
 }
@@ -65,7 +70,7 @@ nav {
         flex-direction: column;
     }
 
-    .about_text {
+    .about_text, .text_section {
         min-width: calc(100% - var(--section-padding))vmin;
     }
 
